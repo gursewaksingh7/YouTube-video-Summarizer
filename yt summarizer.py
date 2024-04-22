@@ -4,7 +4,7 @@ import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-openai.api_key="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"
+openai.api_key=
 
 
 def get_transcript(youtube_url):
