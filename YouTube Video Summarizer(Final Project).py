@@ -47,12 +47,6 @@ toxicity_classifier = load_toxicity_classifier()
 misinformation_detector = load_misinformation_detector()
 whisper_model = load_whisper()
 
-# Hindi bad words
-HINDI_BAD_WORDS = [
-    "chutiya", "madarchod", "bhenchod", "gandu", "bhosdi", "lund", "gaand",
-    "haraami", "kutte", "saala", "haraamkhor", "randi", "behen ke laude", "madarchod ke bachhe"
-]
-
 def is_hindi(text):
     hindi_chars = re.findall(r"[\u0900-\u097F]", text)
     return len(hindi_chars) > 50
